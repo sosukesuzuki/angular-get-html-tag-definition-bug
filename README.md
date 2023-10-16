@@ -6,8 +6,8 @@ import * as ac from "@angular/compiler";
 const KNOWN_TAG_DIV = "div";
 const UNKNOWN_TAG_FOO = "foo";
 const UNKNOWN_TAG_CONSTRUCTOR = "constructor";
+const UNKNOWN_TAG_TOSTRING = "toString";
 
-// Expected
 console.log(ac.getHtmlTagDefinition(KNOWN_TAG_DIV));
 // HtmlTagDefinition {
 //   closedByChildren: {},
@@ -20,7 +20,6 @@ console.log(ac.getHtmlTagDefinition(KNOWN_TAG_DIV));
 //   canSelfClose: false
 // }
 
-// Expected
 console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_FOO));
 // HtmlTagDefinition {
 //   closedByChildren: {},
@@ -33,9 +32,11 @@ console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_FOO));
 //   canSelfClose: true
 // }
 
-// Unexpected
 console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_CONSTRUCTOR));
 // [Function: Object]
+
+console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_TOSTRING));
+// [Function: toString]
 ```
 
 ## Run
