@@ -1,0 +1,12 @@
+{
+  "name": "angular-get-html-tag-definition-bug",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "author": {
+    "name": "Sosuke Suzuki"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/compiler": "^16.2.9"
+  }
+}
