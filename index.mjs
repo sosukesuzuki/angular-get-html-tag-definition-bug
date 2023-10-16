@@ -3,6 +3,7 @@ import * as ac from "@angular/compiler";
 const KNOWN_TAG_DIV = "div";
 const UNKNOWN_TAG_FOO = "foo";
 const UNKNOWN_TAG_CONSTRUCTOR = "constructor";
+const UNKNOWN_TAG_TOSTRING = "toString";
 
 console.log(ac.getHtmlTagDefinition(KNOWN_TAG_DIV));
 // HtmlTagDefinition {
@@ -30,3 +31,6 @@ console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_FOO));
 
 console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_CONSTRUCTOR));
 // [Function: Object]
+
+console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_TOSTRING));
+// [Function: toString]
