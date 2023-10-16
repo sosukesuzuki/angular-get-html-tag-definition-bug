@@ -37,3 +37,9 @@ console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_FOO));
 console.log(ac.getHtmlTagDefinition(UNKNOWN_TAG_CONSTRUCTOR));
 // [Function: Object]
 ```
+
+## Run
+
+```
+node ./index.mjs
+```
